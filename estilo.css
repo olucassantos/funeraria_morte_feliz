@@ -1,0 +1,49 @@
+*, html{
+	margin: 0;
+	padding: 0;
+}
+
+.cabecalho{
+	background-color: #3b0032; /*Muda a cor de fundo do elemento*/
+}
+
+.cabecalho .titulo{
+	text-align: center; /*Alinha o texto no centro do elemento*/
+	color: #ebc588; /*Muda a cor do texto de um elemento*/
+	font-family: "Brush Script MT", "Brush Script Std", cursive;
+	font-size: 90px; /*Aumenta o tamanho do texto*/
+	height: 85px; /*Aumenta a altura do elemento*/
+}
+
+.cabecalho .subtitulo{
+	text-align: center;
+	color: #ebeaa9;
+	font-family: "Brush Script MT", "Brush Script Std", cursive;
+	font-size: 30px;
+}
+
+.cabecalho .barra_navegacao{
+	background-color: #7d2948;
+	margin-top: 20px; /*Adiciona uma margem no topo do elemento*/
+    text-align: center;
+	border-bottom: 5px solid #0e0b29; /*Adiciona borda ao elemento*/
+}
+
+.barra_navegacao ul li{
+	display: inline-block;
+	margin: 0px 75px;
+}
+
+.barra_navegacao ul li a{
+	display: inline-block;
+	padding: 15px 30px;
+	text-decoration: none;
+	color: #ebeaa9;
+	font-size: 25px;
+}
+
+.barra_navegacao ul li a:hover{
+	color: #0e0b29;
+	background-color: #ebeaa9;
+	transition: .5s; /*Adiciona uma transição para a mudança de propriedades*/
+}
