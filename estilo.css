@@ -3,6 +3,13 @@
 	padding: 0;
 }
 
+/* Cria a propriedade para limpar o float da tela. (Clearfix) */
+.clearfix::after{
+	content: '';
+	clear: both;
+	display: table;
+}
+
 /* CABEÇALHO */
 
 .cabecalho{
@@ -60,6 +67,10 @@
 
 /* FALECIDOS DE HOJE  */
 
+.falecidos-hoje{
+	font-family: Helvetica;
+}
+
 .falecidos-hoje .titulo{
 	text-align: center;
 	font-size: 60px;
@@ -69,8 +80,10 @@
 
 .falecido{
 	width: 70%;
-	height: 400px;
 	margin: 0 auto;
+	border: 3px dashed #0e0b29;
+	padding: 15px;
+	border-radius: 5px;
 }
 
 .falecido .imagem{
@@ -78,11 +91,33 @@
 }
 
 .falecido .imagem img{
-	width: 400px;
+	width: 100%;
 	height: auto; /* Calcula a altura da imagem de acordo com a largura */
+	border-radius: 5px;
 }
 
 .falecido .imagem, .falecido .informacoes{
 	float: left;
 	width: 50%;
+}
+
+.falecido .informacoes .nome{
+	text-align: center;
+	font-weight: bold;
+	font-size: 40px;
+	margin-bottom: 30px;
+	padding: 15px;
+}
+
+.falecido .informacoes .nota{
+	font-size: 30px;
+	padding: 15px;
+}
+
+.falecido .informacoes .data{
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	margin-top: 15px;
+	padding: 15px;
 }
