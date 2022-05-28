@@ -3,6 +3,8 @@
 	padding: 0;
 }
 
+/* CABEÇALHO */
+
 .cabecalho{
 	background-color: #3b0032; /*Muda a cor de fundo do elemento*/
 }
@@ -46,4 +48,41 @@
 	color: #0e0b29;
 	background-color: #ebeaa9;
 	transition: .5s; /*Adiciona uma transição para a mudança de propriedades*/
+}
+
+/* FIM CABEÇALHO */
+
+.banner img{
+	width: 100%;
+	height: 400px;
+	border-bottom: 5px solid #0e0b29;
+}
+
+/* FALECIDOS DE HOJE  */
+
+.falecidos-hoje .titulo{
+	text-align: center;
+	font-size: 60px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.falecido{
+	width: 70%;
+	height: 400px;
+	margin: 0 auto;
+}
+
+.falecido .imagem{
+	text-align: center;
+}
+
+.falecido .imagem img{
+	width: 400px;
+	height: auto; /* Calcula a altura da imagem de acordo com a largura */
+}
+
+.falecido .imagem, .falecido .informacoes{
+	float: left;
+	width: 50%;
 }
